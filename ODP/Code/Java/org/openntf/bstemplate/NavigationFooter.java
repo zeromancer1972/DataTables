@@ -22,7 +22,7 @@ public class NavigationFooter implements Serializable {
 		String adminDoc = "";
 		Document doc = null;
 		this.navigation = new ArrayList<Page>();
-//		this.navigation.add(new Page("Subpage", "sub.xsp", "", false));
+		this.navigation.add(new Page("GitHub Project", "https://github.com/zeromancer1972/DataTables", "", true));
 
 		try {
 			admin = ExtLibUtil.getCurrentDatabase().queryAccessRoles(
