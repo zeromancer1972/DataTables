@@ -28,6 +28,7 @@
 							<th>ZIP</th>
 							<th>City</th>
 							<th>Country</th>
+							<th>&#160;</th>
 						</tr>
 					</thead>
 				</table>

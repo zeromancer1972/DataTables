@@ -1,12 +1,13 @@
-@import
-	url("//fonts.googleapis.com/css?family=Open+Sans:300");
-* {
-	/*font-family: "Open Sans", sans-serif;*/
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300");
+
+* { /*font-family: "Open Sans", sans-serif;*/
+	
 }
 
 body {
 	font-family: "Open Sans", sans-serif;
 }
+
 body {
 	background-color: #f0f0f0;
 }
@@ -202,6 +203,14 @@ a.nav-disabled {
 .bigicon {
 	font-size: 94px;
 	opacity: 0.2;
-	filter: alpha(opacity =             20);
+	filter: alpha(opacity =                     20);
 	margin: 0 0 0 20px;
+}
+
+.control-label label {
+	font-weight: bold;
+}
+
+table.form-table {
+	margin-left: -25px;
 }
