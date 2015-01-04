@@ -32,12 +32,7 @@
 		</managed-bean-class>
     <managed-bean-scope>view</managed-bean-scope>
   </managed-bean>
-  <managed-bean>
-    <managed-bean-name>github</managed-bean-name>
-    <managed-bean-class>org.openntf.github.xsp.GitHubController
-		</managed-bean-class>
-    <managed-bean-scope>view</managed-bean-scope>
-  </managed-bean>
+  
   <!-- validators -->
   <validator>
     <validator-id>emailValidator</validator-id>
