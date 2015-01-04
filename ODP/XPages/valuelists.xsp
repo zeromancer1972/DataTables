@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:bx="http://www.openntf.org/xsp/bootstrap"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoDocument
+			var="document1"
+			formName="valuelist">
+		</xp:dominoDocument>
+	</xp:this.data>
+	<xc:_layoutBS3
+		pageTitle="Value lists from application config"
+		navbarBottomInverse="true"
+		hideLeftColumn="true"
+		hideRightColumn="true">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetHelp">
+				<p> If you don't see any values in the combos then please create new
+					value list documents. Use the keys that are shown on the
+					corresponding panels. After creation/modification please reload the
+					config.</p>
+			</xp:div>
+			<xp:div
+				xp:key="facetMiddle"
+				id="content">
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="Create list">
+					<div>
+						<xp:label
+							value="Key"
+							id="label1"
+							for="inputText1">
+						</xp:label>
+						<xp:message
+							id="message1"
+							for="inputText1">
+						</xp:message>
+						<xp:inputText
+							id="inputText1"
+							value="#{document1.key}"
+							required="true">
+						</xp:inputText>
+					</div>
+					<div>
+						<xp:label
+							value="Values"
+							id="label2"
+							for="inputText2">
+						</xp:label>
+						<xp:message
+							id="message2"
+							for="inputText2">
+						</xp:message>
+						<xp:inputText
+							id="inputText2"
+							value="#{document1.values}"
+							multipleSeparator=","
+							multipleTrim="true"
+							required="true">
+						</xp:inputText>
+					</div>
+					<xp:button
+						value="Save"
+						styleClass="btn btn-sm btn-primary"
+						id="button2">
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="complete">
+							<xp:this.action>
+								<xp:saveDocument
+									var="document1">
+								</xp:saveDocument>
+							</xp:this.action>
+						</xp:eventHandler>
+					</xp:button>
+				</xp:div>
+				<xp:div
+					id="combos"
+					rendererType="bootstrap.Panel"
+					title="Saluations (key=salutation)">
+					<xp:comboBox
+						id="comboBox1">
+						<xp:selectItems>
+							<xp:this.value><![CDATA[#{javascript:application.getList("salutation")}]]></xp:this.value>
+						</xp:selectItems>
+					</xp:comboBox>
+					<bx:select2PickerCombo
+						id="select2PickerCombo1"
+						for="comboBox1">
+					</bx:select2PickerCombo>
+				</xp:div>
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="Cities (key=city)">
+					<xp:comboBox
+						id="comboBox2">
+						<xp:selectItems>
+							<xp:this.value><![CDATA[#{javascript:application.getSortedList("city")}]]></xp:this.value>
+						</xp:selectItems>
+					</xp:comboBox>
+					<bx:select2PickerCombo
+						id="select2PickerCombo2"
+						for="comboBox2">
+					</bx:select2PickerCombo>
+				</xp:div>
+				<xp:button
+					value="Reload config"
+					id="button1"
+					styleClass="btn btn-sm btn-info">
+					<xp:eventHandler
+						event="onclick"
+						submit="true"
+						refreshMode="complete"
+						disableValidators="true">
+						<xp:this.action><![CDATA[#{javascript:application.reload()}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

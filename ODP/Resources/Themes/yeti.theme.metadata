@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="33a" sequence="14" unid="9C1972B75450511CC1257D0D0002DCCB">
+<created><datetime dst="true">20140706T023115,95+02</datetime></created>
+<modified><datetime>20150104T002455,95+01</datetime></modified>
+<revised><datetime dst="true">20140927T165808,03+02</datetime></revised>
+<lastaccessed><datetime>20150104T002455,95+01</datetime></lastaccessed>
+<addedtofile><datetime>20150104T002455,95+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+<item name="$Flags"><text>34567Cg~`</text></item>
+<item name="$TITLE" sign="true"><text>yeti.theme</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>yeti.theme</text></item>
+<item name="$CSSFiles"><textlist><text>yeti/bootstrap.css</text><text>yeti_tweaks.css</text></textlist></item></note>

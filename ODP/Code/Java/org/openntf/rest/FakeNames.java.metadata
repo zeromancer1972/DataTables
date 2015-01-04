@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="38e" sequence="24" unid="C846144FC4D4F89BC1257DC20083554B">
+<created><datetime>20150104T005430,51+01</datetime></created>
+<modified><datetime>20150104T011737,08+01</datetime></modified>
+<revised><datetime>20150104T011737,07+01</datetime></revised>
+<lastaccessed><datetime>20150104T011737,08+01</datetime></lastaccessed>
+<addedtofile><datetime>20150104T005430,52+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>org/openntf/rest/FakeNames.java</text></item>
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>org/openntf/rest/FakeNames.java</text></item>
+
+</note>

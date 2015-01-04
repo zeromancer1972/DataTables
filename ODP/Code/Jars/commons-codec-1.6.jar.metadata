@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1ea" sequence="3" unid="F21E5E3E72160C2FC1257D6000532807">
+<created><datetime dst="true">20140927T170817,35+02</datetime></created>
+<modified><datetime>20150104T002452,59+01</datetime></modified>
+<revised><datetime dst="true">20140927T170817,40+02</datetime></revised>
+<lastaccessed><datetime>20150104T002452,59+01</datetime></lastaccessed>
+<addedtofile><datetime>20150104T002452,59+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+<item name="$TITLE"><text>commons-codec-1.6.jar</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+<item name="$Flags"><text>34567Cg~,</text></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item name="$FileNames" sign="true"><text>commons-codec-1.6.jar</text></item></note>

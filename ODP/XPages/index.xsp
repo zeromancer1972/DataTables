@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.resources>
+		<xp:script
+			src="/dt.js"
+			clientSide="true">
+		</xp:script>
+	</xp:this.resources>
+	<xc:_layoutBS3
+		pageTitle="DataTables Demo Application"
+		navbarBottomInverse="true">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetMiddle">
+				<table
+					id="datatable"
+					class="table table-striped table-bordered table-hover"
+					cellspacing="0"
+					width="100%">
+					<thead>
+						<tr>
+							<th>Lastname</th>
+							<th>Firstname</th>
+							<th>Address</th>
+							<th>ZIP</th>
+							<th>City</th>
+							<th>Country</th>
+						</tr>
+					</thead>
+				</table>
+			</xp:div>
+			<xp:div
+				xp:key="facetRight">
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="DataTables">
+					<p> DataTables is a plug-in for the jQuery Javascript library. It
+						is a highly flexible tool, based upon the foundations of
+						progressive enhancement, and will add advanced interaction
+						controls to any HTML table.</p>
+					<p>
+						<a
+							href="http://datatables.net/"
+							target="_blank"> DataTables</a>
+					</p>
+				</xp:div>
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="About this demo">
+					<p>This example is highly customzied, also
+						dataTables.bootstrap.js and dataTables.bootstrap.css are
+						customized to work within the XSP environment.</p>
+				</xp:div>
+			</xp:div>
+			<xp:div
+				xp:key="facetHelp"> This application demonstrates the usage of the jQuery
+				DataTables plugin</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>
