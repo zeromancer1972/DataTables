@@ -3,7 +3,6 @@ $(document).ready( function() {
 	var table = $("#datatable").dataTable( {
 		"language" : {
 			"lengthMenu" : "Records per page _MENU_",
-			"zeroRecords" : "Nothing found - sorry",
 			"info" : "Page _PAGE_ of _PAGES_",
 			"infoEmpty" : "No records available",
 			"infoFiltered" : ""
