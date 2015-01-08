@@ -9,7 +9,7 @@ $(document).ready( function() {
 			"infoFiltered" : ""
 		},
 		scrollY : 400,
-		"ajax" : "data.xsp",
+		"ajax" : "index.xsp/data",
 		"columns" : [ {
 			"data" : "lastname"
 		}, {

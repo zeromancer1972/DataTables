@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="376" sequence="9" unid="A47CC8959EC48894C1257DC20081A02E">
-<created><datetime>20150104T003551,50+01</datetime></created>
-<modified><datetime>20150104T013857,58+01</datetime></modified>
-<revised><datetime>20150104T013857,57+01</datetime></revised>
-<lastaccessed><datetime>20150104T013857,58+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T003551,52+01</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.2" replicaid="C1257DC7002A5929" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="356" sequence="4" unid="900E120F17045754C1257DC7002A5A9C">
+<created><datetime>20150108T084237,08+01</datetime></created>
+<modified><datetime>20150108T090117,63+01</datetime></modified>
+<revised><datetime>20150108T090117,62+01</datetime></revised>
+<lastaccessed><datetime>20150108T090117,63+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T084241,01+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE" sign="true"><text>dt.js</text></item>

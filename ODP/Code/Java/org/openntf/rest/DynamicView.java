@@ -46,14 +46,22 @@ public class DynamicView implements Serializable {
 			ArrayList<Object> collections = new ArrayList<Object>();
 			JsonJavaObject obj = new JsonJavaObject();
 			View view = ExtLibUtil.getCurrentDatabase().getView(viewName);
+			if (view == null)
+				return;
+
 			@SuppressWarnings("unchecked")
 			Vector columns = view.getColumns();
+			for (Object column : columns) {
+				ViewColumn co = (ViewColumn) column;
+				if (!co.isHidden()) {
+					cols.add(co.getTitle());
+				}
+			}
 			ViewEntryCollection col = view.getAllEntries();
 			ViewEntry ent = col.getFirstEntry();
 			ViewEntry tmp = null;
 			int count;
-			boolean addCols = true;
-
+			
 			while (ent != null) {
 				tmp = col.getNextEntry(ent);
 				count = 0;
@@ -66,16 +74,13 @@ public class DynamicView implements Serializable {
 						ViewColumn co = (ViewColumn) column;
 						if (!co.isHidden()) {
 							// visible column added to collection
-							if (addCols)
-								cols.add(co.getTitle());
 							collection.put(Integer.valueOf(count).toString(), ent.getColumnValues().elementAt(count).toString());
 							count++;
 						}
 					}
-					
+
 					collection.put("unid", ent.getDocument().getUniversalID());
 					collections.add(collection);
-					addCols = false;
 				}
 
 				ent.recycle();

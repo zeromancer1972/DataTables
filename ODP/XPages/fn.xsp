@@ -12,7 +12,7 @@
 	<xp:this.navigationRules>
 		<xp:navigationRule
 			outcome="close"
-			viewId="/index.xsp">
+			viewId="$$PreviousPage">
 		</xp:navigationRule>
 	</xp:this.navigationRules>
 	<xc:_layoutBS3

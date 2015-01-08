@@ -61,4 +61,14 @@
 				DataTables plugin</xp:div>
 		</xp:this.facets>
 	</xc:_layoutBS3>
+	<xe:restService
+		id="restService1"
+		pathInfo="data">
+		<xe:this.service>
+			<xe:customRestService contentType="application/json">
+				<xe:this.doGet><![CDATA[#{javascript:var json = new org.openntf.rest.FakeNames();
+json.getData();}]]></xe:this.doGet>
+			</xe:customRestService>
+		</xe:this.service>
+	</xe:restService>
 </xp:view>
