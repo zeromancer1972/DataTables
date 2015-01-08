@@ -8,7 +8,6 @@ var response = externalContext.getResponse();
 response.setContentType("application/json");
 response.setHeader("Cache-Control", "no-cache");
 writer.write(viewjson.data);
-writer.write(); 
 writer.endDocument();
 }]]>
 	</xp:this.afterRenderResponse>

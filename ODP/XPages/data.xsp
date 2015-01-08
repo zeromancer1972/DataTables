@@ -8,7 +8,6 @@ response.setHeader("Cache-Control", "no-cache");
 
 var json = new org.openntf.rest.FakeNames();
 writer.write(json.getData());
-writer.write(); 
 writer.endDocument();
 }]]>
 	</xp:this.afterRenderResponse>

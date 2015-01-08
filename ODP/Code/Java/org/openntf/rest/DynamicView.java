@@ -25,7 +25,7 @@ public class DynamicView implements Serializable {
 
 	private static final long serialVersionUID = 3369811607367745396L;
 
-	private String data = "{}";
+	private String data;
 	private ArrayList<String> cols;
 
 	public DynamicView() {
@@ -33,8 +33,9 @@ public class DynamicView implements Serializable {
 	}
 
 	private void init() {
+		data = "{}";
+		cols = new ArrayList<String>();
 		try {
-			cols = new ArrayList<String>();
 			FacesContext facesContext = FacesContext.getCurrentInstance();
 			XSPContext context = XSPContext.getXSPContext(facesContext);
 			String viewName = context.getUrl().getParameter("viewName");
@@ -44,36 +45,45 @@ public class DynamicView implements Serializable {
 
 			ArrayList<Object> collections = new ArrayList<Object>();
 			JsonJavaObject obj = new JsonJavaObject();
-
 			View view = ExtLibUtil.getCurrentDatabase().getView(viewName);
 			@SuppressWarnings("unchecked")
 			Vector columns = view.getColumns();
 			ViewEntryCollection col = view.getAllEntries();
 			ViewEntry ent = col.getFirstEntry();
 			ViewEntry tmp = null;
-			int count = 0;
+			int count;
+			boolean addCols = true;
+
 			while (ent != null) {
 				tmp = col.getNextEntry(ent);
 				count = 0;
-				// nur Dokumente
+				// documents only
 				if (ent.isDocument()) {
-					// Alle Spalten durchlaufen
+					// add all view columns
 					HashMap<String, Object> collection = new HashMap<String, Object>();
 					for (Object column : columns) {
+
 						ViewColumn co = (ViewColumn) column;
 						if (!co.isHidden()) {
-							// Spalte ist sichtbar, also Wert in Hash aufnehmen
-							cols.add(co.getTitle());
+							// visible column added to collection
+							if (addCols)
+								cols.add(co.getTitle());
 							collection.put(Integer.valueOf(count).toString(), ent.getColumnValues().elementAt(count).toString());
 							count++;
 						}
 					}
+					
+					collection.put("unid", ent.getDocument().getUniversalID());
 					collections.add(collection);
+					addCols = false;
 				}
 
 				ent.recycle();
 				ent = tmp;
 			}
+
+			col.recycle();
+			view.recycle();
 
 			obj.put("data", collections);
 			try {
