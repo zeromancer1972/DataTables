@@ -10,10 +10,11 @@
 		fullWidth="false"
 		pageTitle="Dynamic View">
 		<xp:this.facets>
-			<xp:div xp:key="facetHelp">
-				Load any view via the URL parameter viewName=ViewName
+			<xp:div
+				xp:key="facetHelp"> Load any view via the URL parameter viewName=ViewName
 			</xp:div>
-			<xp:div xp:key="facetMiddle">
+			<xp:div
+				xp:key="facetMiddle">
 				<table
 					id="dtable"
 					class="table table-striped table table-condensed table-hover table-bordered">
@@ -61,7 +62,8 @@
 })]]></xp:this.value>
 				</xp:scriptBlock>
 			</xp:div>
-			<xp:div xp:key="facetRight">
+			<xp:div
+				xp:key="facetRight">
 				<xp:div
 					rendererType="bootstrap.Panel"
 					title="Dynamic View">
@@ -79,6 +81,14 @@
 							text="ByName2"
 							id="link2"
 							value="dynamic.xsp?viewName=ByName2">
+						</xp:link>
+					</p>
+					<p>
+						<xp:link
+							escape="true"
+							text="valuelists"
+							id="link3"
+							value="dynamic.xsp?viewName=valuelists">
 						</xp:link>
 					</p>
 				</xp:div>
