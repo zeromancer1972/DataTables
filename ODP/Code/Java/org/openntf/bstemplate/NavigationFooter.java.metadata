@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="296" sequence="35" unid="58FAF4BEA16EDF3BC1257CBF005CC491">
-<created><datetime dst="true">20140419T185316,33+02</datetime></created>
-<modified><datetime>20150104T002708,72+01</datetime></modified>
-<revised><datetime>20150104T002708,71+01</datetime></revised>
-<lastaccessed><datetime>20150104T002708,72+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,13+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="4c6" sequence="38" unid="2FF5D7D3A6D8174AC1257DC7002A5AC0">
+<created><datetime>20150108T084237,44+01</datetime></created>
+<modified><datetime>20150108T182709,39+01</datetime></modified>
+<revised><datetime>20150108T084243,88+01</datetime></revised>
+<lastaccessed><datetime>20150108T182709,39+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182709,39+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>org/openntf/bstemplate/NavigationFooter.java</text></item>
-
 <item name="$DesignerVersion"><text>8.5.3</text></item>
 
 
 <item name="$FileNames" sign="true"><text>org/openntf/bstemplate/NavigationFooter.java</text></item>
+
 
 </note>

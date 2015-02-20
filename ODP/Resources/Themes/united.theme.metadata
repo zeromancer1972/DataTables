@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="316" sequence="11" unid="5343DFA10AA54FEFC1257D0D0002D135">
-<created><datetime dst="true">20140706T023046,29+02</datetime></created>
-<modified><datetime>20150104T002455,77+01</datetime></modified>
-<revised><datetime dst="true">20140706T024353,39+02</datetime></revised>
-<lastaccessed><datetime>20150104T002455,77+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,77+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5de" sequence="13" unid="9FAFDD05C7957448C1257DC7002A5A4F">
+<created><datetime>20150108T084236,31+01</datetime></created>
+<modified><datetime>20150113T183207,44+01</datetime></modified>
+<revised><datetime>20150113T183207,43+01</datetime></revised>
+<lastaccessed><datetime>20150113T183207,44+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,79+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~`</text></item>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>united.theme</text></item>
-<item name="$CSSFiles"><textlist><text>united/bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>united/bootstrap.css</text></item></note>

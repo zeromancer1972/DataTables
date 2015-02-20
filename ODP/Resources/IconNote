@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
  maintenanceversion='1.2' replicaid='C1257DC200809265'>
-<noteinfo noteid='11a' unid='D6F5937C47F83F19C1257DC2008092F6' sequence='8'>
+<noteinfo noteid='11a' unid='D6F5937C47F83F19C1257DC2008092F6' sequence='1'>
 <created><datetime>20150104T002422,30+01</datetime></created>
-<modified><datetime>20150104T002527,93+01</datetime></modified>
-<revised><datetime>20150104T002527,92+01</datetime></revised>
-<lastaccessed><datetime>20150104T002527,93+01</datetime></lastaccessed>
+<modified><datetime>20150108T184225,23+01</datetime></modified>
+<revised><datetime>20150108T184225,22+01</datetime></revised>
+<lastaccessed><datetime>20150108T184225,23+01</datetime></lastaccessed>
 <addedtofile><datetime>20150104T002422,34+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <item name='IconBitmap' summary='true'>
@@ -23,14 +23,14 @@ d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
 EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
 AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
-<item name='$PIRCRefreshModTime'><datetime>20150104T002451,34+01</datetime></item>
-<item name='$TemplateModTime'><datetime>20141228T173118,34+01</datetime></item>
 <item name='$TemplateServerName'><text>CN=Oliver Busse/O=ulcbs</text></item>
-<item name='$TemplateFileName'><text>CN=Alderaan/O=Busse!!bs3template.nsf</text></item>
 <item name='$DefaultClientXPage'><text>index.xsp</text></item>
 <item name='$DefaultXPage'><text>index.xsp</text></item>
-<item name='$Daos'><text>0</text></item>
+<item name='$PIRCRefreshModTime'><datetime>20150108T094842,84+01</datetime></item>
+<item name='$TemplateModTime'><datetime>20150108T094819,88+01</datetime></item>
+<item name='$TemplateFileName'><text>CN=dominotest/OU=test/O=ulcbs!!datatables.nsf</text></item>
 <item name='$Flags'><text>J!</text></item>
+<item name='$Daos'><text>0</text></item>
 <item name='$TITLE'><text>DataTables
 </text></item></note>
 

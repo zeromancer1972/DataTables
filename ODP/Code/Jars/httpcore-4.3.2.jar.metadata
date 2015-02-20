@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="22e" sequence="3" unid="8D2FE8171506EF3CC1257D600053296A">
-<created><datetime dst="true">20140927T170820,90+02</datetime></created>
-<modified><datetime>20150104T002454,34+01</datetime></modified>
-<revised><datetime dst="true">20140927T170820,96+02</datetime></revised>
-<lastaccessed><datetime>20150104T002454,34+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002454,34+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="54a" sequence="4" unid="63C3D5F64CEECAD7C1257DC7002A5B24">
+<created><datetime>20150108T084238,44+01</datetime></created>
+<modified><datetime>20150108T182710,05+01</datetime></modified>
+<revised><datetime>20150108T084242,06+01</datetime></revised>
+<lastaccessed><datetime>20150108T182710,05+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,05+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE"><text>httpcore-4.3.2.jar</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
 <item name="$Flags"><text>34567Cg~,</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
 
 
 

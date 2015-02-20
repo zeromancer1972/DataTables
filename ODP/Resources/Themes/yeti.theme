@@ -10,4 +10,11 @@
 		<content-type>text/css</content-type>
 		<href>yeti_tweaks.css</href>
 	</resource>
+	<control>
+		<name>ViewRoot</name>
+		<property>
+			<name>style</name>
+			<value>background-color:#eee</value>
+		</property>
+	</control>
 </theme>

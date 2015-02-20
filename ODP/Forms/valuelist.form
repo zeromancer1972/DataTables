@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.2'
  replicaid='C1257DC200809265'>
-<noteinfo noteid='31e' unid='5D456AB0C21E30A0C1257DA700166D28' sequence='3'>
-<created><datetime>20141207T050457,36+01</datetime></created>
-<modified><datetime>20150104T002455,81+01</datetime></modified>
-<revised><datetime>20141207T050519,61+01</datetime></revised>
-<lastaccessed><datetime>20150104T002455,81+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,81+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid='50a' unid='4E2A358D36F59034C1257DC7002A5A7B' sequence='5'>
+<created><datetime>20150108T084236,75+01</datetime></created>
+<modified><datetime>20150113T183207,48+01</datetime></modified>
+<revised><datetime>20150113T183207,47+01</datetime></revised>
+<lastaccessed><datetime>20150113T183207,48+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182709,73+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name='$HTMLCode' sign='true'>

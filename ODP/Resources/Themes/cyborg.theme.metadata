@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1fe" sequence="11" unid="A22086F02F683115C1257D0D000270D5">
-<created><datetime dst="true">20140706T022639,57+02</datetime></created>
-<modified><datetime>20150104T002452,73+01</datetime></modified>
-<revised><datetime dst="true">20140706T024354,19+02</datetime></revised>
-<lastaccessed><datetime>20150104T002452,73+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002452,73+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="4d2" sequence="13" unid="386BB5B718971F4FC1257DC7002A5A66">
+<created><datetime>20150108T084236,54+01</datetime></created>
+<modified><datetime>20150113T183206,12+01</datetime></modified>
+<revised><datetime>20150113T183206,11+01</datetime></revised>
+<lastaccessed><datetime>20150113T183206,12+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182709,45+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~`</text></item>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>cyborg.theme</text></item>
-<item name="$CSSFiles"><textlist><text>cyborg/bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>cyborg/bootstrap.css</text></item></note>

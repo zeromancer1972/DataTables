@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="2ca" sequence="5" unid="8658FE0826F7DB74C1257D6C00380EA2">
-<created><datetime dst="true">20141009T121217,62+02</datetime></created>
-<modified><datetime>20150104T002455,39+01</datetime></modified>
-<revised><datetime dst="true">20141009T121220,23+02</datetime></revised>
-<lastaccessed><datetime>20150104T002455,39+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,39+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="586" sequence="6" unid="81D31AD9F6230764C1257DC7002A5A72">
+<created><datetime>20150108T084236,66+01</datetime></created>
+<modified><datetime>20150108T182710,35+01</datetime></modified>
+<revised><datetime>20150108T084240,28+01</datetime></revised>
+<lastaccessed><datetime>20150108T182710,35+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,35+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE"><text>pastel-tweaks.css</text></item>

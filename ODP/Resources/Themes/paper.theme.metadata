@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="2c2" sequence="6" unid="5267C211EFDA3B92C1257D330057C29B">
-<created><datetime dst="true">20140813T175834,51+02</datetime></created>
-<modified><datetime>20150104T002455,35+01</datetime></modified>
-<revised><datetime dst="true">20140813T175900,77+02</datetime></revised>
-<lastaccessed><datetime>20150104T002455,35+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,35+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="632" sequence="8" unid="C7557CB716648FB2C1257DC7002A5A5C">
+<created><datetime>20150108T084236,44+01</datetime></created>
+<modified><datetime>20150113T183207,10+01</datetime></modified>
+<revised><datetime>20150113T183207,09+01</datetime></revised>
+<lastaccessed><datetime>20150113T183207,10+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182711,21+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~`</text></item>
 <item name="$TITLE" sign="true"><text>paper.theme</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
 
 
 <item name="$FileNames" sign="true"><text>paper.theme</text></item>
-<item name="$CSSFiles"><textlist><text>paper/bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>paper/bootstrap.css</text></item></note>

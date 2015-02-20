@@ -11,7 +11,9 @@ public class Navigation implements Serializable {
 
 	public Navigation() {
 		this.navigation = new ArrayList<Page>();
-
+		this.navigation.add(new Page("Static HTML", "index.xsp", "fa fa-code", false));
+		this.navigation.add(new Page("Computed HTML", "computed.xsp", "fa fa-code", false));
+		this.navigation.add(new Page("XSP Paging", "paging.xsp", "fa fa-code", false));
 		this.navigation.add(new Page("Dynamic View", "dynamic.xsp?viewName=ByCity", "fa fa-code", false));
 	}
 

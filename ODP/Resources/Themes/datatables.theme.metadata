@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="372" sequence="57" unid="A3FC794DEB74BB7DC1257DC200812FE0">
-<created><datetime>20150104T003104,00+01</datetime></created>
-<modified><datetime>20150104T033740,70+01</datetime></modified>
-<revised><datetime>20150104T033740,69+01</datetime></revised>
-<lastaccessed><datetime>20150104T033740,70+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T003104,01+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="4da" sequence="59" unid="3B297B3841C96FCAC1257DC7002A5A62">
+<created><datetime>20150108T084236,50+01</datetime></created>
+<modified><datetime>20150113T183206,22+01</datetime></modified>
+<revised><datetime>20150113T183206,21+01</datetime></revised>
+<lastaccessed><datetime>20150113T183206,22+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182709,49+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE"><text>datatables.theme</text></item>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>datatables.theme</text></item>
-<item name="$CSSFiles"><textlist><text>bower_components/DataTables/media/css/dataTables.bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>bower_components/DataTables/media/css/dataTables.bootstrap.css</text></item></note>

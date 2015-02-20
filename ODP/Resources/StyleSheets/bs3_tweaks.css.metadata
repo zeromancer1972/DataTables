@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="152" sequence="36" unid="6B87DFD9AF299171C1257CBF005D09D7">
-<created><datetime dst="true">20140419T185613,67+02</datetime></created>
-<modified><datetime>20150104T002451,67+01</datetime></modified>
-<revised><datetime>20141213T172831,50+01</datetime></revised>
-<lastaccessed><datetime>20150104T002451,67+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002451,67+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="496" sequence="45" unid="21486FAB391797A3C1257DC7002A5A74">
+<created><datetime>20150108T084236,68+01</datetime></created>
+<modified><datetime>20150108T182709,15+01</datetime></modified>
+<revised><datetime>20150108T084240,34+01</datetime></revised>
+<lastaccessed><datetime>20150108T182709,15+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182709,15+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE" sign="true"><text>bs3_tweaks.css</text></item>

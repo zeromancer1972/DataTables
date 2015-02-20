@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="246" sequence="5" unid="0739BA26614959CAC1257CBF00611FB6">
-<created><datetime dst="true">20140419T194051,10+02</datetime></created>
-<modified><datetime>20150104T002454,73+01</datetime></modified>
-<revised><datetime dst="true">20140706T024354,61+02</datetime></revised>
-<lastaccessed><datetime>20150104T002454,73+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002454,73+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="57e" sequence="6" unid="7CCE9D3FC90BCF9FC1257DC7002A5A77">
+<created><datetime>20150108T084236,71+01</datetime></created>
+<modified><datetime>20150108T182710,31+01</datetime></modified>
+<revised><datetime>20150108T084240,40+01</datetime></revised>
+<lastaccessed><datetime>20150108T182710,31+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,31+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE" sign="true"><text>light_mosaic.png</text></item>

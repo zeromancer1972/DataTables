@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="206" sequence="11" unid="5DF38F854BB404A5C1257D0D000280AB">
-<created><datetime dst="true">20140706T022720,11+02</datetime></created>
-<modified><datetime>20150104T002452,77+01</datetime></modified>
-<revised><datetime dst="true">20140706T024354,09+02</datetime></revised>
-<lastaccessed><datetime>20150104T002452,77+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002452,77+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="59e" sequence="13" unid="8B04DC316BE48A54C1257DC7002A5A64">
+<created><datetime>20150108T084236,52+01</datetime></created>
+<modified><datetime>20150113T183206,16+01</datetime></modified>
+<revised><datetime>20150113T183206,15+01</datetime></revised>
+<lastaccessed><datetime>20150113T183206,16+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,47+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~`</text></item>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>darkly.theme</text></item>
-<item name="$CSSFiles"><textlist><text>darkly/bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>darkly/bootstrap.css</text></item></note>

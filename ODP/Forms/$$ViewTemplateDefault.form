@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.2'
  replicaid='C1257DC200809265'>
-<noteinfo noteid='34a' unid='D03E705C92F4FBF5C1257CEC008340C8' sequence='4'>
-<created><datetime dst='true'>20140604T015338,00+02</datetime></created>
-<modified><datetime>20150104T002456,03+01</datetime></modified>
-<revised><datetime dst='true'>20140706T024354,83+02</datetime></revised>
-<lastaccessed><datetime>20150104T002456,03+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002456,03+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid='46e' unid='04880979F8838677C1257DC7002A5A7F' sequence='6'>
+<created><datetime>20150108T084236,79+01</datetime></created>
+<modified><datetime>20150113T183207,66+01</datetime></modified>
+<revised><datetime>20150113T183207,65+01</datetime></revised>
+<lastaccessed><datetime>20150113T183207,66+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182708,95+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name='$Fields'><textlist/></item>

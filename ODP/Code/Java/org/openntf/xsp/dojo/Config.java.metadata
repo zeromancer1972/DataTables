@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="2ba" sequence="3" unid="CB86826D795E293FC1257D47005FBE50">
-<created><datetime dst="true">20140902T192546,40+02</datetime></created>
-<modified><datetime>20150104T002455,31+01</datetime></modified>
-<revised><datetime dst="true">20140902T192549,37+02</datetime></revised>
-<lastaccessed><datetime>20150104T002455,31+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002455,31+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="60e" sequence="4" unid="ABF067F10EC80E54C1257DC7002A5AA9">
+<created><datetime>20150108T084237,21+01</datetime></created>
+<modified><datetime>20150108T182711,03+01</datetime></modified>
+<revised><datetime>20150108T084243,60+01</datetime></revised>
+<lastaccessed><datetime>20150108T182711,03+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182711,03+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>org/openntf/xsp/dojo/Config.java</text></item>
-
-
-
 <item name="$DesignerVersion"><text>8.5.3</text></item>
 
 
-<item name="$FileNames" sign="true"><text>org/openntf/xsp/dojo/Config.java</text></item></note>
+<item name="$FileNames" sign="true"><text>org/openntf/xsp/dojo/Config.java</text></item>
+
+
+</note>

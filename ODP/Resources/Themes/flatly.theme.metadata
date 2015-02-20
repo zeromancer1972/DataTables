@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="212" sequence="11" unid="69B667982A6059E6C1257D0D00028AE8">
-<created><datetime dst="true">20140706T022746,32+02</datetime></created>
-<modified><datetime>20150104T002452,85+01</datetime></modified>
-<revised><datetime dst="true">20140706T024353,99+02</datetime></revised>
-<lastaccessed><datetime>20150104T002452,85+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002452,85+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="55a" sequence="13" unid="6C64CEC7A1DDCF9FC1257DC7002A5A61">
+<created><datetime>20150108T084236,49+01</datetime></created>
+<modified><datetime>20150113T183206,28+01</datetime></modified>
+<revised><datetime>20150113T183206,27+01</datetime></revised>
+<lastaccessed><datetime>20150113T183206,28+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,13+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$Flags"><text>34567Cg~`</text></item>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>flatly.theme</text></item>
-<item name="$CSSFiles"><textlist><text>flatly/bootstrap.css</text></textlist></item></note>
+<item name="$CSSFiles"><text>flatly/bootstrap.css</text></item></note>

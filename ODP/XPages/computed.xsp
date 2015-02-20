@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.data>
+		<xp:dominoView
+			var="view1"
+			viewName="ByName">
+		</xp:dominoView>
+	</xp:this.data>
+	<xp:scriptBlock
+		id="scriptBlock1"
+		type="text/javascript">
+		<xp:this.value><![CDATA[function initTable() {
+	$("#tableComputed").dataTable( {});
+}
+
+function initTable2() {
+	$("#tableComputed").dataTable( {
+		scrollY : 400
+	});
+}]]></xp:this.value>
+	</xp:scriptBlock>
+	<xc:_layoutBS3
+		pageTitle="Computed HTML Table"
+		navbarBottomInverse="true">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetHelp"> The table on that page was generated with a repeat control
+			</xp:div>
+			<xp:div
+				xp:key="facetRight"
+				rendererType="bootstrap.Panel"
+				title="Using a Repeat Control">
+				<p> The table was generated with a repeat control that has a Domino
+					View data source attached. The control displays the first 100
+					entries from a view. The paging is managed entirely through the plugin.</p>
+				<div>
+					<xp:button
+						value="Dynamic Height"
+						id="button1"
+						styleClass="btn-sm btn-warning btn-block">
+						<xp:eventHandler
+							event="onclick"
+							submit="false">
+							<xp:this.script><![CDATA[initTable();]]></xp:this.script>
+						</xp:eventHandler>
+					</xp:button>
+				</div>
+				<br/>
+				<div>
+					<xp:button
+						value="Static Height"
+						id="button2"
+						styleClass="btn-sm btn-danger btn-block">
+						<xp:eventHandler
+							event="onclick"
+							submit="false">
+							<xp:this.script><![CDATA[initTable2();]]></xp:this.script>
+						</xp:eventHandler>
+					</xp:button>
+				</div>
+			</xp:div>
+			<xp:div
+				xp:key="facetMiddle">
+				<table
+					id="tableComputed"
+					class="table table-striped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Lastname</th>
+							<th>Firstname</th>
+							<th>EMail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<xp:repeat
+							rows="100"
+							value="#{view1}"
+							var="entry">
+							<tr>
+								<td>
+									<xp:text
+										value="#{entry.lastname}">
+									</xp:text>
+								</td>
+								<td>
+									<xp:text
+										value="#{entry.firstname}">
+									</xp:text>
+								</td>
+								<td>
+									<xp:text
+										value="#{entry.email}">
+									</xp:text>
+								</td>
+							</tr>
+						</xp:repeat>
+					</tbody>
+				</table>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

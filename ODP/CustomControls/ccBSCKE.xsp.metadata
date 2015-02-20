@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1d6" sequence="23" unid="5D613AEFC416BB99C1257CBF005C5EA9">
-<created><datetime dst="true">20140419T184855,45+02</datetime></created>
-<modified><datetime>20150104T002452,42+01</datetime></modified>
-<revised><datetime dst="true">20140706T024426,21+02</datetime></revised>
-<lastaccessed><datetime>20150104T002452,42+01</datetime></lastaccessed>
-<addedtofile><datetime>20150104T002452,42+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5be" sequence="24" unid="983384E9927BD438C1257DC7002A5A86">
+<created><datetime>20150108T084236,86+01</datetime></created>
+<modified><datetime>20150108T182710,63+01</datetime></modified>
+<revised><datetime>20150108T084243,44+01</datetime></revised>
+<lastaccessed><datetime>20150108T182710,63+01</datetime></lastaccessed>
+<addedtofile><datetime>20150108T182710,63+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
 <item name="$TITLE"><text>ccBSCKE.xsp</text></item>
