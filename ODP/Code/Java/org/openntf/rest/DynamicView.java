@@ -1,12 +1,9 @@
 package org.openntf.rest;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Vector;
-
-import javax.faces.context.FacesContext;
 
 import lotus.domino.NotesException;
 import lotus.domino.View;
@@ -18,38 +15,39 @@ import com.ibm.commons.util.io.json.JsonException;
 import com.ibm.commons.util.io.json.JsonGenerator;
 import com.ibm.commons.util.io.json.JsonJavaFactory;
 import com.ibm.commons.util.io.json.JsonJavaObject;
-import com.ibm.xsp.designer.context.XSPContext;
 import com.ibm.xsp.extlib.util.ExtLibUtil;
 
-public class DynamicView implements Serializable {
-
-	private static final long serialVersionUID = 3369811607367745396L;
+public class DynamicView {
 
 	private String data;
+	private String id;
 	private ArrayList<String> cols;
+	private final String viewName;
 
-	public DynamicView() {
+	public DynamicView(final String v) {
+		viewName = v;
 		init();
 	}
 
+	@SuppressWarnings("unchecked")
 	private void init() {
 		data = "{}";
 		cols = new ArrayList<String>();
 		try {
-			FacesContext facesContext = FacesContext.getCurrentInstance();
-			XSPContext context = XSPContext.getXSPContext(facesContext);
-			String viewName = context.getUrl().getParameter("viewName");
-
-			if (viewName == null || viewName.toString().equals(""))
+			id = ExtLibUtil.getCurrentSession().evaluate("@Unique").elementAt(0).toString();
+			if (viewName == null || viewName.toString().equals("")) {
+				System.out.println("no view name specified");
 				return;
+			}
 
 			ArrayList<Object> collections = new ArrayList<Object>();
 			JsonJavaObject obj = new JsonJavaObject();
 			View view = ExtLibUtil.getCurrentDatabase().getView(viewName);
-			if (view == null)
+			if (view == null) {
+				System.out.println("view not found");
 				return;
+			}
 
-			@SuppressWarnings("unchecked")
 			Vector columns = view.getColumns();
 			for (Object column : columns) {
 				ViewColumn co = (ViewColumn) column;
@@ -61,7 +59,7 @@ public class DynamicView implements Serializable {
 			ViewEntry ent = col.getFirstEntry();
 			ViewEntry tmp = null;
 			int count;
-			
+
 			while (ent != null) {
 				tmp = col.getNextEntry(ent);
 				count = 0;
@@ -79,6 +77,7 @@ public class DynamicView implements Serializable {
 						}
 					}
 
+					// last column always contains the UNID to open the document
 					collection.put("unid", ent.getDocument().getUniversalID());
 					collections.add(collection);
 				}
@@ -106,12 +105,15 @@ public class DynamicView implements Serializable {
 		}
 	}
 
-	public synchronized String getData() {
+	public String getData() {
 		return data;
 	}
 
-	public synchronized ArrayList<String> getCols() {
+	public ArrayList<String> getCols() {
 		return cols;
 	}
 
+	public String getId() {
+		return "dataTable-" + id;
+	}
 }

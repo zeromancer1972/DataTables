@@ -3,16 +3,54 @@
 	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:xe="http://www.ibm.com/xsp/coreex">
-	<xp:this.resources>
-		<xp:script
-			src="/dt.js"
-			clientSide="true">
-		</xp:script>
-	</xp:this.resources>
+	<xp:scriptBlock
+		id="scriptBlock1"
+		type="text/javascript">
+		<xp:this.value><![CDATA[// DataTables init
+$(document).ready( function() {
+	var table = $("#datatable").dataTable( {
+		stateSave : true,
+		"language" : {
+			"lengthMenu" : "Records per page _MENU_",
+			"info" : "Page _PAGE_ of _PAGES_",
+			"infoEmpty" : "No records available",
+			"infoFiltered" : ""
+		},
+		scrollY : 400,
+		"ajax" : "rest.xsp/data",
+		"columns" : [ {
+			"data" : "lastname"
+		}, {
+			"data" : "firstname"
+		}, {
+			"data" : "address"
+		}, {
+			"data" : "zip"
+		}, {
+			"data" : "city"
+		}, {
+			"data" : "country"
+		}, {
+			"data" : "unid",
+			"visible" : false
+		} ]
+
+	});
+
+	table.on("dblclick", "tr", function() {
+		var data = table.fnGetData(this);
+		location.href = "fn.xsp?documentId=" + data.unid;
+	});
+
+})]]></xp:this.value>
+	</xp:scriptBlock>
 	<xc:_layoutBS3
-		pageTitle="DataTables Demo Application"
+		pageTitle="Getting data with a REST service"
+		hideLeftColumn="true"
+		hideRightColumn="true"
 		navbarBottomInverse="true">
 		<xp:this.facets>
+			<xp:div xp:key="facetHelp">The DataTables plug-in loads the data via a custo REST service</xp:div>
 			<xp:div
 				xp:key="facetMiddle">
 				<table
@@ -33,42 +71,54 @@
 					</thead>
 				</table>
 			</xp:div>
-			<xp:div
-				xp:key="facetRight">
-				<xp:div
-					rendererType="bootstrap.Panel"
-					title="DataTables">
-					<p> DataTables is a plug-in for the jQuery Javascript library. It
-						is a highly flexible tool, based upon the foundations of
-						progressive enhancement, and will add advanced interaction
-						controls to any HTML table.</p>
-					<p>
-						<a
-							href="http://datatables.net/"
-							target="_blank"> DataTables</a>
-					</p>
-				</xp:div>
-				<xp:div
-					rendererType="bootstrap.Panel"
-					title="About this demo">
-					<p>This example is highly customzied, also
-						dataTables.bootstrap.js and dataTables.bootstrap.css are
-						customized to work within the XSP environment.</p>
-				</xp:div>
-			</xp:div>
-			<xp:div
-				xp:key="facetHelp"> This application demonstrates the usage of the jQuery
-				DataTables plugin</xp:div>
 		</xp:this.facets>
 	</xc:_layoutBS3>
 	<xe:restService
 		id="restService1"
 		pathInfo="data">
 		<xe:this.service>
-			<xe:customRestService contentType="application/json">
+			<xe:customRestService
+				contentType="application/json">
 				<xe:this.doGet><![CDATA[#{javascript:var json = new org.openntf.rest.FakeNames();
 json.getData();}]]></xe:this.doGet>
 			</xe:customRestService>
+		</xe:this.service>
+	</xe:restService>
+	<xe:restService
+		id="restService2"
+		pathInfo="view">
+		<xe:this.service>
+			<xe:viewItemFileService
+				viewName="ByName"
+				systemColumns="2"
+				globalValues="1">
+				<xe:this.columns>
+					<xe:restViewColumn
+						columnName="lastname"
+						name="lastname">
+					</xe:restViewColumn>
+					<xe:restViewColumn
+						columnName="firstname"
+						name="firstname">
+					</xe:restViewColumn>
+					<xe:restViewColumn
+						columnName="address"
+						name="address">
+					</xe:restViewColumn>
+					<xe:restViewColumn
+						columnName="zip"
+						name="zip">
+					</xe:restViewColumn>
+					<xe:restViewColumn
+						columnName="city"
+						name="city">
+					</xe:restViewColumn>
+					<xe:restViewColumn
+						columnName="country"
+						name="country">
+					</xe:restViewColumn>
+				</xe:this.columns>
+			</xe:viewItemFileService>
 		</xe:this.service>
 	</xe:restService>
 </xp:view>

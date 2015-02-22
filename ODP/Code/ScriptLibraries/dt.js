@@ -9,7 +9,7 @@ $(document).ready( function() {
 			"infoFiltered" : ""
 		},
 		scrollY : 400,
-		"ajax" : "index.xsp/data",
+		"ajax" : "rest.xsp/data",
 		"columns" : [ {
 			"data" : "lastname"
 		}, {
@@ -26,6 +26,7 @@ $(document).ready( function() {
 			"data" : "unid",
 			"visible" : false
 		} ]
+
 	});
 
 	table.on("dblclick", "tr", function() {

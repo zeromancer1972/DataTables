@@ -25,7 +25,7 @@
 				<xp:button
 					value="Turn it on!"
 					id="button1"
-					styleClass="btn-sm btn-success btn-block">
+					styleClass="btn-sm btn-primary btn-block">
 					<xp:eventHandler
 						event="onclick"
 						submit="false">

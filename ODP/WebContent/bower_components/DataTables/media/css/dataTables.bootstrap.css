@@ -65,6 +65,8 @@ table.dataTable thead .sorting,table.dataTable thead .sorting_asc,table.dataTabl
 	cursor: pointer;
 }
 
+/* XSP: change relative paths to absolute ones */
+
 table.dataTable thead .sorting {
 	background: url('bower_components/DataTables/media/images/sort_both.png') no-repeat center right;
 }

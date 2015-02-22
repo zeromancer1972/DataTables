@@ -39,7 +39,7 @@ function initTable2() {
 					<xp:button
 						value="Dynamic Height"
 						id="button1"
-						styleClass="btn-sm btn-warning btn-block">
+						styleClass="btn-sm btn-primary btn-block">
 						<xp:eventHandler
 							event="onclick"
 							submit="false">
@@ -52,7 +52,7 @@ function initTable2() {
 					<xp:button
 						value="Static Height"
 						id="button2"
-						styleClass="btn-sm btn-danger btn-block">
+						styleClass="btn-sm btn-primary btn-block">
 						<xp:eventHandler
 							event="onclick"
 							submit="false">

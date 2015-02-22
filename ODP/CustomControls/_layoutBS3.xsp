@@ -41,8 +41,7 @@ if(url.indexOf(".xsp")==-1){
 					href="index.xsp">
 					<span
 						class="#{javascript:return application.getAppIcon()}"></span>
-					&#160;
-					<xp:text
+					&#160;<xp:text
 						disableTheme="true"
 						value="#{javascript:return application.getAppTitle()}">
 					</xp:text>
@@ -74,7 +73,8 @@ if(url.indexOf(".xsp")==-1){
 								<span
 									class="#{javascript:nav.getIcon()}">
 								</span>
-								&#160;<xp:text
+								&#160;
+								<xp:text
 									escape="true"
 									id="computedField1"
 									disableTheme="true"
@@ -156,52 +156,70 @@ if(url.indexOf(".xsp")==-1){
 		role="navigation">
 		<div
 			class="#{javascript:compositeData.fullWidth?'container-fluid':'container'}">
-			<ul
-				class="nav navbar-nav"
-				style="margin-left:-14px">
-				<xp:repeat
-					id="repeat2"
-					rows="30"
-					disableOutputTag="true"
-					value="#{javascript:footer.navigation}"
-					var="nav">
-					<xp:panel
-						tagName="li"
-						rendered="#{javascript:nav.visible}">
-						<xp:this.styleClass><![CDATA[#{javascript:view.getPageName().indexOf(nav.getUrl())!=-1 ? "active" : ""}]]></xp:this.styleClass>
-						<a
-							href="#{javascript:nav.getUrl()}"
-							target="#{javascript:nav.isNewWindow()?'_blank':''}">
-							<xp:text
-								escape="true"
-								id="computedField2"
-								disableTheme="true"
-								value="#{javascript:nav.getLabel()}">
-							</xp:text>
-						</a>
-					</xp:panel>
-				</xp:repeat>
-			</ul>
-			<ul
-				class="nav navbar-nav navbar-right">
-				<li>
-					<xp:link
-						escape="true"
-						id="link1">
-						<xp:this.attrs>
-							<xp:attr
-								name="data-target"
-								value="#aboutbox">
-							</xp:attr>
-							<xp:attr
-								name="data-toggle"
-								value="modal">
-							</xp:attr>
-						</xp:this.attrs>
-						<xp:this.text><![CDATA[#{javascript:"© 2014 Oliver Busse"}]]></xp:this.text>
-					</xp:link>
-				</li>
-			</ul>
+			<button
+				type="button"
+				class="navbar-toggle"
+				data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-2">
+				<span
+					class="sr-only">Toggle navigation</span>
+				<span
+					class="icon-bar"></span>
+				<span
+					class="icon-bar"></span>
+				<span
+					class="icon-bar"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-2">
+				<ul
+					class="nav navbar-nav"
+					style="margin-left:-14px">
+					<xp:repeat
+						id="repeat2"
+						rows="30"
+						disableOutputTag="true"
+						value="#{javascript:footer.navigation}"
+						var="nav">
+						<xp:panel
+							tagName="li"
+							rendered="#{javascript:nav.visible}">
+							<xp:this.styleClass><![CDATA[#{javascript:view.getPageName().indexOf(nav.getUrl())!=-1 ? "active" : ""}]]></xp:this.styleClass>
+							<a
+								href="#{javascript:nav.getUrl()}"
+								target="#{javascript:nav.isNewWindow()?'_blank':''}">
+								<xp:text
+									escape="true"
+									id="computedField2"
+									disableTheme="true"
+									value="#{javascript:nav.getLabel()}">
+								</xp:text>
+							</a>
+						</xp:panel>
+					</xp:repeat>
+				</ul>
+				<ul
+					class="nav navbar-nav navbar-right">
+					<li>
+						<xp:link
+							escape="true"
+							id="link1">
+							<xp:this.attrs>
+								<xp:attr
+									name="data-target"
+									value="#aboutbox">
+								</xp:attr>
+								<xp:attr
+									name="data-toggle"
+									value="modal">
+								</xp:attr>
+							</xp:this.attrs>
+							<xp:this.text><![CDATA[#{javascript:"© 2014 - "+@Year(@Today())+" Oliver Busse"}]]></xp:this.text>
+						</xp:link>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<xc:ccAboutbox></xc:ccAboutbox>

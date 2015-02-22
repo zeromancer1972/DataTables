@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="55a" sequence="13" unid="6C64CEC7A1DDCF9FC1257DC7002A5A61">
+<noteinfo noteid="55a" sequence="19" unid="6C64CEC7A1DDCF9FC1257DC7002A5A61">
 <created><datetime>20150108T084236,49+01</datetime></created>
-<modified><datetime>20150113T183206,28+01</datetime></modified>
-<revised><datetime>20150113T183206,27+01</datetime></revised>
-<lastaccessed><datetime>20150113T183206,28+01</datetime></lastaccessed>
+<modified><datetime>20150222T143301,71+01</datetime></modified>
+<revised><datetime>20150222T143301,70+01</datetime></revised>
+<lastaccessed><datetime>20150222T143301,71+01</datetime></lastaccessed>
 <addedtofile><datetime>20150108T182710,13+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>flatly.theme</text></item>
-<item name="$CSSFiles"><text>flatly/bootstrap.css</text></item></note>
+<item name="$CSSFiles"><textlist><text>flatly/bootstrap.css</text><text>flatly_tweaks.css</text></textlist></item></note>

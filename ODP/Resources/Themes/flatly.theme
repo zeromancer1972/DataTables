@@ -11,4 +11,8 @@
 		<content-type>text/css</content-type>
 		<href>flatly/bootstrap.css</href>
 	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>flatly_tweaks.css</href>
+	</resource>
 </theme>
