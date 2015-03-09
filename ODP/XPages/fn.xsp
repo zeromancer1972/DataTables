@@ -16,8 +16,6 @@
 		</xp:navigationRule>
 	</xp:this.navigationRules>
 	<xc:_layoutBS3
-		navbarTopInverse="false"
-		navbarBottomInverse="true"
 		fullWidth="false"
 		hideLeftColumn="true"
 		hideRightColumn="true"

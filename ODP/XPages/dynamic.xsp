@@ -4,7 +4,6 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:xe="http://www.ibm.com/xsp/coreex">
 	<xc:_layoutBS3
-		navbarBottomInverse="true"
 		hideHelpArea="false"
 		pageTitle="Dynamic View Custom Control"
 		hideLeftColumn="true"

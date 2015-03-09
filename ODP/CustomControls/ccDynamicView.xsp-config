@@ -23,5 +23,9 @@
         </designer-extension>
       </property-extension>
     </property>
+    <property>
+      <property-name>staticColumn</property-name>
+      <property-class>boolean</property-class>
+    </property>
   </composite-component>
 </faces-config>

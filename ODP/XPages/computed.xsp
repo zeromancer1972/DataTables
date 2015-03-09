@@ -22,8 +22,7 @@ function initTable2() {
 }]]></xp:this.value>
 	</xp:scriptBlock>
 	<xc:_layoutBS3
-		pageTitle="Computed HTML Table"
-		navbarBottomInverse="true">
+		pageTitle="Computed HTML Table">
 		<xp:this.facets>
 			<xp:div
 				xp:key="facetHelp"> The table on that page was generated with a repeat control

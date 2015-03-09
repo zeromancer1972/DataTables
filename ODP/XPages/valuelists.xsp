@@ -12,7 +12,6 @@
 	</xp:this.data>
 	<xc:_layoutBS3
 		pageTitle="Value lists from application config"
-		navbarBottomInverse="true"
 		hideLeftColumn="true"
 		hideRightColumn="true">
 		<xp:this.facets>

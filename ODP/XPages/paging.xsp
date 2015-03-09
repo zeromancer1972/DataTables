@@ -3,8 +3,7 @@
 	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	<xc:_layoutBS3
-		pageTitle="Computed HTML Table"
-		navbarBottomInverse="true">
+		pageTitle="Computed HTML Table">
 		<xp:this.facets>
 			<xp:div
 				xp:key="facetHelp"> The table on that page was generated with a repeat control
@@ -19,11 +18,8 @@
 				<p>The plugin is initialized using 2 options to hide the pager
 					and the page info:</p>
 				<pre
-					style="font-size: 0.8em">
-$("#tablePager").dataTable( {
-	"paging" : false, 
-	"info" : false 
-});</pre>
+					style="font-size: 0.8em"> $("#tablePager").dataTable( { "paging" : false, "info" :
+					false });</pre>
 			</xp:div>
 			<xp:div
 				xp:key="facetRight">
@@ -117,8 +113,10 @@ $('#tablePager tbody').on("dblclick", "tr", function() {
 });]]></xp:this.value>
 					</xp:scriptBlock>
 				</xp:panel>
-				<div class="well">
-					<strong>Hint:</strong>&#160;Double-click on a row opens the document
+				<div
+					class="well">
+					<strong>Hint:</strong>
+					&#160;Double-click on a row opens the document
 				</div>
 			</xp:div>
 		</xp:this.facets>

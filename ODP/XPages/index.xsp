@@ -10,8 +10,7 @@
 }]]></xp:this.value>
 	</xp:scriptBlock>
 	<xc:_layoutBS3
-		pageTitle="Static HTML Table"
-		navbarBottomInverse="true">
+		pageTitle="Static HTML Table">
 		<xp:this.facets>
 			<xp:div xp:key="facetRight" rendererType="bootstrap.Panel" title="Table Properties">
 			The HTML table must contain a THEAD and a TBODY with the corresponding TH and TD elements.

@@ -28,6 +28,7 @@
 		id="scriptBlock1"
 		type="text/javascript">
 		<xp:this.value><![CDATA[$(document).ready( function() {
+	var static = #{javascript:compositeData.staticColumn ? true : false};
 	var table = $("##{javascript:viewjson.getId()}").dataTable( {
 		stateSave : true,
 		"language" : {
@@ -36,8 +37,8 @@
 			"infoEmpty" : "No records available",
 			"infoFiltered" : ""
 		},
-		scrollX : false,
 		scrollY : 400,
+		scrollX : static,
 		"ajax" : "#{javascript:view.getPageName().substring(1)}/data?viewName=#{javascript:compositeData.viewName}",
 		"dataSrc" : "data"
 	});
@@ -46,6 +47,9 @@
 		var data = table.fnGetData(this);
 		location.href = "$$OpenDominoDocument.xsp?documentId=" + data.unid;
 	});
+	
+	if(static)
+		new $.fn.dataTable.FixedColumns( table );
 
 })]]></xp:this.value>
 	</xp:scriptBlock>

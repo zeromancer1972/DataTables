@@ -47,10 +47,11 @@ $(document).ready( function() {
 	<xc:_layoutBS3
 		pageTitle="Getting data with a REST service"
 		hideLeftColumn="true"
-		hideRightColumn="true"
-		navbarBottomInverse="true">
+		hideRightColumn="true">
 		<xp:this.facets>
-			<xp:div xp:key="facetHelp">The DataTables plug-in loads the data via a custo REST service</xp:div>
+			<xp:div
+				xp:key="facetHelp">The DataTables plug-in loads the data via a custo REST
+				service</xp:div>
 			<xp:div
 				xp:key="facetMiddle">
 				<table

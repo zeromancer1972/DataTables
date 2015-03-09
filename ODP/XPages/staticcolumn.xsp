@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xc:_layoutBS3
+		hideHelpArea="false"
+		pageTitle="Static Column"
+		hideLeftColumn="true"
+		hideRightColumn="true">
+		<xp:this.facets>
+			<xp:div xp:key="facetHelp">
+				This page uses the Static Column extension of DataTables
+			</xp:div>
+			<xp:div xp:key="facetMiddle">
+				<xc:ccDynamicView
+					viewName="ByName"
+					staticColumn="true">
+				</xc:ccDynamicView>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

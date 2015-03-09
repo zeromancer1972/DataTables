@@ -16,6 +16,7 @@ public class Navigation implements Serializable {
 		this.navigation.add(new Page("XSP Paging", "paging.xsp", "fa fa-code", false));
 		this.navigation.add(new Page("REST", "rest.xsp", "fa fa-code", false));
 		this.navigation.add(new Page("Dynamic View", "dynamic.xsp", "fa fa-code", false));
+		this.navigation.add(new Page("Static Column", "staticcolumn.xsp", "fa fa-code", false));
 	}
 
 	public List<Page> getNavigation() {
