@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='view' xmlns='http://www.lotus.com/dxl' version='9.0'
+<<<<<<< HEAD
  maintenanceversion='1.3' replicaid='C1257DC200809265'>
 <noteinfo noteid='3d6' unid='63C22809C3F09B1CC1257CBF005C4B73' sequence='15'>
 <created><datetime dst='true'>20140419T184806,27+02</datetime></created>
@@ -9,6 +10,17 @@
 <addedtofile><datetime dst='true'>20150414T114431,64+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
+=======
+ maintenanceversion='1.2' replicaid='C1257DC200809265'>
+<noteinfo noteid='146' unid='63C22809C3F09B1CC1257CBF005C4B73' sequence='14'>
+<created><datetime dst='true'>20140419T184806,27+02</datetime></created>
+<modified><datetime>20150113T183204,66+01</datetime></modified>
+<revised><datetime>20150113T183204,65+01</datetime></revised>
+<lastaccessed><datetime>20150219T164918,34+01</datetime></lastaccessed>
+<addedtofile><datetime>20150104T002451,56+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+>>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 <item name='$FormulaClass' sign='true'><text>1</text></item>
 <item name='$TITLE' sign='true'><text>all</text></item>
 <item name='$Index' sign='true'><text/></item>

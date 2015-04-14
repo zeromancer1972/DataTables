@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.3'
  replicaid='C1257DC200809265'>
 <noteinfo noteid='6fa' unid='6EA772F92EBB7256C1257DF40046C4D8' sequence='3'>
@@ -9,6 +10,18 @@
 <addedtofile><datetime dst='true'>20150414T114501,68+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
+=======
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.2'
+ replicaid='C1257DC200809265'>
+<noteinfo noteid='6fe' unid='6EA772F92EBB7256C1257DF40046C4D8' sequence='2'>
+<created><datetime>20150222T135259,12+01</datetime></created>
+<modified><datetime>20150222T135308,20+01</datetime></modified>
+<revised><datetime>20150222T135308,19+01</datetime></revised>
+<lastaccessed><datetime>20150222T135308,20+01</datetime></lastaccessed>
+<addedtofile><datetime>20150222T135259,36+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+>>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 <item name='$HTMLCode' sign='true'>
 <rawitemdata type='1'>
 X/8QAAIADwAHAAAAAAAAAA==
