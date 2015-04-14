@@ -1,0 +1,30 @@
+<theme
+	extends="flatly"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+	<!--
+		<resource> <content-type>text/css</content-type>
+		<href>bower_components/DataTables/media/css/jquery.dataTables.min.css</href>
+		</resource>
+	-->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bower_components/DataTables/media/css/dataTables.bootstrap.css</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>bower_components/DataTables/media/js/jquery.dataTables.min.js</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>bower_components/DataTables/media/js/dataTables.bootstrap.js</href>
+	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bower_components/DataTables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>bower_components/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.js</href>
+	</resource>
+</theme>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="6b6" sequence="10" unid="ED787064A06CD6B3C1257DF4004A5BE8">
+<created><datetime>20150222T143211,92+01</datetime></created>
+<modified><datetime dst="true">20150414T114508,33+02</datetime></modified>
+<revised><datetime dst="true">20150414T114508,32+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150414T114508,32+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150414T114501,34+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
+<item name="$TITLE"><text>flatly_tweaks.css</text></item>
+<item name="$MimeType"><text>text/css</text></item>
+<item name="$Flags"><text>34C=Q</text></item>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>flatly_tweaks.css</text></item></note>

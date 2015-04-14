@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.beforePageLoad><![CDATA[#{javascript:var viewjson = new org.openntf.rest.DynamicView(compositeData.viewName);}]]></xp:this.beforePageLoad>
+	<table
+		id="#{javascript:viewjson.getId()}"
+		class="table table-striped table table-hover table-bordered">
+		<thead>
+			<xp:repeat
+				id="repeat1"
+				rows="30"
+				disableOutputTag="true"
+				var="col"
+				value="#{javascript:viewjson.getCols()}">
+				<th>
+					<xp:text
+						escape="true"
+						disableTheme="true"
+						value="#{col}">
+					</xp:text>
+				</th>
+			</xp:repeat>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<xp:scriptBlock
+		id="scriptBlock1"
+		type="text/javascript">
+		<xp:this.value><![CDATA[$(document).ready( function() {
+	var static = #{javascript:compositeData.staticColumn ? true : false};
+	var table = $("##{javascript:viewjson.getId()}").dataTable( {
+		stateSave : true,
+		"language" : {
+			"lengthMenu" : "Records per page _MENU_",
+			"info" : "Page _PAGE_ of _PAGES_",
+			"infoEmpty" : "No records available",
+			"infoFiltered" : ""
+		},
+		scrollY : 400,
+		scrollX : static,
+		"ajax" : "#{javascript:view.getPageName().substring(1)}/data?viewName=#{javascript:compositeData.viewName}",
+		"dataSrc" : "data"
+	});
+
+	table.on("dblclick", "tr", function() {
+		var data = table.fnGetData(this);
+		location.href = "$$OpenDominoDocument.xsp?documentId=" + data.unid;
+	});
+	
+	if(static)
+		new $.fn.dataTable.FixedColumns( table );
+
+})]]></xp:this.value>
+	</xp:scriptBlock>
+	<xe:restService
+		id="restService1"
+		pathInfo="data">
+		<xe:this.service>
+			<xe:customRestService
+				contentType="application/json"
+				doGet="#{javascript:viewjson.getData()}">
+			</xe:customRestService>
+		</xe:this.service>
+	</xe:restService>
+</xp:view>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:div
+		style="width:70%">
+		<table
+			id="dataSimple"
+			style="width:50%"
+			class="table table-striped table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>firstname</th>
+					<th>lastname</th>
+					<th>city</th>
+					<th>state</th>
+				</tr>
+			</thead>
+		</table>
+	</xp:div>
+	<xp:eventHandler
+		event="onClientLoad"
+		submit="false">
+		<xp:this.script><![CDATA[$(document).ready( function() {
+	$("#dataSimple").dataTable( {
+		stateSave : true,
+		"language" : {
+			"lengthMenu" : "Records per page _MENU_",
+			"info" : "Page _PAGE_ of _PAGES_",
+			"infoEmpty" : "No records available",
+			"infoFiltered" : ""
+		},
+		scrollY : 400,
+		"ajax" : "datatable_rest.xsp/data2",
+		"columns" : [
+
+		{
+			"data" : "firstname"
+		}, {
+			"data" : "lastname"
+		}, {
+			"data" : "city"
+		}, {
+			"data" : "state"
+		}, ]
+	});
+
+})
+]]></xp:this.script>
+	</xp:eventHandler>
+	<xe:restService
+		id="restService1"
+		pathInfo="data2">
+		<xe:this.service>
+			<xe:customRestService>
+				<xe:this.doGet><![CDATA[#{javascript:var dataCarrier = {};
+var jsonData = []; 
+  
+var thisEntry = {}; 
+thisEntry.firstname = 'Howard'; 
+thisEntry.lastname = 'Greenberg'; 
+thisEntry.city = 'Boca'; 
+thisEntry.state = 'Florida'; 
+jsonData.push(thisEntry); 
+jsonData.push(thisEntry); 
+jsonData.push(thisEntry); 
+jsonData.push(thisEntry); 
+dataCarrier.data = jsonData;
+return toJson(dataCarrier);}]]></xe:this.doGet>
+			</xe:customRestService>
+		</xe:this.service>
+	</xe:restService>
+</xp:view>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="4ae" sequence="72" unid="3B297B3841C96FCAC1257DC7002A5A62">
+<created><datetime>20150108T084236,50+01</datetime></created>
+<modified><datetime dst="true">20150414T114505,77+02</datetime></modified>
+<revised><datetime dst="true">20150414T114505,76+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150414T114505,76+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150414T114432,74+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
+<item name="$TITLE"><text>datatables.theme</text></item>
+<item name="$Flags"><text>34567Cg~`</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>datatables.theme</text></item>
+<item name="$CSSFiles"><textlist><text>bower_components/DataTables/media/css/dataTables.bootstrap.css</text><text>bower_components/DataTables/extensions/FixedColumns/css/dataTables.fixedColumns.min.css</text></textlist></item></note>

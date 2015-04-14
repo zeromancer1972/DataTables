@@ -1,0 +1,11 @@
+.pagehelp {
+	color: #fff;
+}
+
+.pagehelp a,.pagehelp a:link,.pagehelp a:visited {
+	color: #fff;
+}
+
+.dataTable tr {
+	cursor: pointer;
+}

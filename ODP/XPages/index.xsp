@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:scriptBlock
+		id="scriptBlock1"
+		type="text/javascript">
+		<xp:this.value><![CDATA[function initTable() {
+	$("#tableSimple").dataTable( {});
+}]]></xp:this.value>
+	</xp:scriptBlock>
+	<xc:_layoutBS3
+		pageTitle="Static HTML Table">
+		<xp:this.facets>
+			<xp:div xp:key="facetRight" rendererType="bootstrap.Panel" title="Table Properties">
+			The HTML table must contain a THEAD and a TBODY with the corresponding TH and TD elements.
+			</xp:div>
+			<xp:div
+				xp:key="facetLeft"
+				rendererType="bootstrap.Panel"
+				title="Turn HTML into a DataTable">
+				<p> The static HTML table you see will be turned into a DataTable by
+					clicking the button that runs the script.</p>
+				<xp:button
+					value="Turn it on!"
+					id="button1"
+					styleClass="btn-sm btn-primary btn-block">
+					<xp:eventHandler
+						event="onclick"
+						submit="false">
+						<xp:this.script><![CDATA[initTable();]]></xp:this.script>
+					</xp:eventHandler>
+				</xp:button>
+			</xp:div>
+			<xp:div
+				xp:key="facetHelp"> Welcome to the DataTables plugin Demo Application</xp:div>
+			<xp:div
+				xp:key="facetMiddle">
+				<table
+					id="tableSimple" class="table table-striped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Lastname</th>
+							<th>Firstname</th>
+							<th>EMail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Burg</td>
+							<td>Johannes</td>
+							<td>jb@sample.com</td>
+						</tr>
+						<tr>
+							<td>Bourne</td>
+							<td>Mel</td>
+							<td>mb@sample.com</td>
+						</tr>
+						<tr>
+							<td>Furt</td>
+							<td>Frank</td>
+							<td>ff@sample.com</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr/>
+				<div role="tabpanel">
+	<!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
+    <li role="presentation"><a href="#js" aria-controls="js" role="tab" data-toggle="tab">Javascript</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="html">
+    <xp:div>
+    	<pre>
+				
+&lt;table id=&quot;tableSimple&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Lastname&lt;/th&gt;
+			&lt;th&gt;Firstname&lt;/th&gt;
+			&lt;th&gt;EMail&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Burg&lt;/td&gt;
+			&lt;td&gt;Johannes&lt;/td&gt;
+			&lt;td&gt;jb@sample.com&lt;/td&gt;
+		&lt;/tr&gt;
+		...
+	&lt;/tbody&gt;
+&lt;/table&gt;
+				</pre>
+				</xp:div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="js">
+    <pre>
+function initTable() {
+	$("#tableSimple").dataTable({});
+}
+    </pre>
+    </div>
+  </div>
+</div>			
+				
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xc:_layoutBS3
+		hideHelpArea="false"
+		pageTitle="Dynamic View Custom Control"
+		hideLeftColumn="true"
+		hideRightColumn="true">
+		<xp:this.facets>
+			<xp:div xp:key="facetHelp">
+				This page uses a custom control to load any view of the
+				application
+			</xp:div>
+			<xp:div xp:key="facetMiddle">
+				<xc:ccDynamicView viewName="ByName2"></xc:ccDynamicView>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

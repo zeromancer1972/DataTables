@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xc:_layoutBS3
+		pageTitle="Computed HTML Table">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetHelp"> The table on that page was generated with a repeat control
+				and comes with it's own pager</xp:div>
+			<xp:div
+				xp:key="facetLeft"
+				rendererType="bootstrap.Panel"
+				title="Using a Repeat Control">
+				<p> The table was generated with a repeat control that has a Domino
+					View data source attached. The control displays 30 entries per
+					page. The paging is managed via a normal XPages pager.</p>
+				<p>The plugin is initialized using 2 options to hide the pager
+					and the page info:</p>
+				<pre
+					style="font-size: 0.8em"> $("#tablePager").dataTable( { "paging" : false, "info" :
+					false });</pre>
+			</xp:div>
+			<xp:div
+				xp:key="facetRight">
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="Required Structure">
+					<p>The Javascript with the DataTables call should reside in the
+						panel, that contains the data source for the repeat control. If
+						the pager re-calculates the data source, the script is executed
+						again.</p>
+				</xp:div>
+				<xp:div
+					rendererType="bootstrap.Panel"
+					title="Disadvantage">
+					<p>Paging through a data source loads only a fragment of data
+						into the page. The plugin is only working for that fragment. You
+						can only search for data that is displayed.</p>
+				</xp:div>
+			</xp:div>
+			<xp:div
+				xp:key="facetMiddle">
+				<xp:panel>
+					<xp:this.data>
+						<xp:dominoView
+							var="view1"
+							viewName="ByName">
+						</xp:dominoView>
+					</xp:this.data>
+					<xp:pager
+						layout="FirstArrow Separator PreviousArrow Separator SeparatorPage Group Separator NextArrow Separator LastArrow"
+						id="pager1"
+						for="repeat1"
+						partialRefresh="true"
+						alwaysCalculateLast="true">
+					</xp:pager>
+					<table
+						id="tablePager"
+						class="table table-striped table-hover table-bordered">
+						<thead>
+							<tr>
+								<th
+									style="display:none">UNID</th>
+								<th>Lastname</th>
+								<th>Firstname</th>
+								<th>EMail</th>
+							</tr>
+						</thead>
+						<tbody>
+							<xp:repeat
+								id="repeat1"
+								rows="10"
+								value="#{view1}"
+								var="entry">
+								<tr>
+									<td
+										style="display:none">
+										<xp:text
+											value="#{javascript:entry.getDocument().getUniversalID()}">
+										</xp:text>
+									</td>
+									<td>
+										<xp:text
+											value="#{entry.lastname}">
+										</xp:text>
+									</td>
+									<td>
+										<xp:text
+											value="#{entry.firstname}">
+										</xp:text>
+									</td>
+									<td>
+										<xp:text
+											value="#{entry.email}">
+										</xp:text>
+									</td>
+								</tr>
+							</xp:repeat>
+						</tbody>
+					</table>
+					<xp:scriptBlock
+						id="scriptBlock1"
+						type="text/javascript">
+						<xp:this.value><![CDATA[$("#tablePager").dataTable( {
+	"paging" : false,
+	"info" : false
+});
+
+$('#tablePager tbody').on("dblclick", "tr", function() {
+	var unid = $('td', this).eq(0).text();
+	location.href = "fn.xsp?documentId=" + unid;
+});]]></xp:this.value>
+					</xp:scriptBlock>
+				</xp:panel>
+				<div
+					class="well">
+					<strong>Hint:</strong>
+					&#160;Double-click on a row opens the document
+				</div>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>

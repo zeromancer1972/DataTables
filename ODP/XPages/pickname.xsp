@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoDocument
+			var="document1"
+			formName="pickname">
+		</xp:dominoDocument>
+	</xp:this.data>
+	<xc:_layoutBS3>
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetMiddle">
+				<xp:table>
+					<xp:tr>
+						<xp:td>
+							<xp:label
+								value="Name:"
+								id="name_Label1"
+								for="name1">
+							</xp:label>
+						</xp:td>
+						<xp:td>
+							<xe:djextListTextBox
+								id="djextListTextBox1"
+								value="#{document1.unid}"
+								displayLabel="true">
+							</xe:djextListTextBox>
+							<xe:valuePicker
+								id="valuePicker1"
+								for="djextListTextBox1">
+								<xe:this.dataProvider>
+									<xe:dominoViewValuePicker
+										viewName="ByName">
+									</xe:dominoViewValuePicker>
+								</xe:this.dataProvider>
+							</xe:valuePicker>
+						</xp:td>
+					</xp:tr>
+				</xp:table>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layoutBS3>
+</xp:view>
