@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
 <noteinfo noteid="5ba" sequence="26" unid="D984D411CC044AB8C1257DC7002A5A53">
 <created><datetime>20150108T084236,35+01</datetime></created>
@@ -8,17 +7,6 @@
 <addedtofile><datetime dst="true">20150414T114500,03+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
-=======
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="65a" sequence="25" unid="D984D411CC044AB8C1257DC7002A5A53">
-<created><datetime>20150108T084236,35+01</datetime></created>
-<modified><datetime>20150113T183207,36+01</datetime></modified>
-<revised><datetime>20150113T183207,35+01</datetime></revised>
-<lastaccessed><datetime>20150113T183207,36+01</datetime></lastaccessed>
-<addedtofile><datetime>20150108T182711,41+01</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
-<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
->>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 <item name="$Flags"><text>34567Cg~`</text></item>
 <item name="$TITLE" sign="true"><text>spacelab.theme</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>

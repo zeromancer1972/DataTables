@@ -14,11 +14,7 @@
 				application
 			</xp:div>
 			<xp:div xp:key="facetMiddle">
-<<<<<<< HEAD
 				<xc:ccDynamicView viewName="ByName2"></xc:ccDynamicView>
-=======
-				<xc:ccDynamicView viewName="ByCity"></xc:ccDynamicView>
->>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 			</xp:div>
 		</xp:this.facets>
 	</xc:_layoutBS3>

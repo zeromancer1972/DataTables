@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
 <noteinfo noteid="6e2" sequence="51" unid="90299BA6C66200E5C1257DC7002A5A97">
 <created><datetime>20150108T084237,03+01</datetime></created>
@@ -8,35 +7,16 @@
 <addedtofile><datetime dst="true">20150414T114501,56+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
-=======
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="5aa" sequence="42" unid="90299BA6C66200E5C1257DC7002A5A97">
-<created><datetime>20150108T084237,03+01</datetime></created>
-<modified><datetime>20150108T182710,53+01</datetime></modified>
-<revised><datetime>20150108T084242,72+01</datetime></revised>
-<lastaccessed><datetime>20150108T182710,53+01</datetime></lastaccessed>
-<addedtofile><datetime>20150108T182710,53+01</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
-<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
->>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 <item name="$Flags"><text>gC~4;</text></item>
 <item name="$TITLE" sign="true"><text>_layoutBS3.xsp</text></item>
 
 
 
 
-<<<<<<< HEAD
 
 
 
 <item name="$FileNames" sign="true"><text>_layoutBS3.xsp</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
-=======
-<item name="$FileNames" sign="true"><text>_layoutBS3.xsp</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-
-
-
->>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 
 </note>

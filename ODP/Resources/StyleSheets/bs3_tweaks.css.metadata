@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
 <noteinfo noteid="3ee" sequence="51" unid="21486FAB391797A3C1257DC7002A5A74">
 <created><datetime>20150108T084236,68+01</datetime></created>
@@ -8,17 +7,6 @@
 <addedtofile><datetime dst="true">20150414T114431,76+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Oliver Busse/O=ulcbs</name><name>CN=Oliver Busse/O=DEV-We4IT</name></updatedby>
 <wassignedby><name>CN=Oliver Busse/O=DEV-We4IT</name></wassignedby>
-=======
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257DC200809265" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="496" sequence="45" unid="21486FAB391797A3C1257DC7002A5A74">
-<created><datetime>20150108T084236,68+01</datetime></created>
-<modified><datetime>20150108T182709,15+01</datetime></modified>
-<revised><datetime>20150108T084240,34+01</datetime></revised>
-<lastaccessed><datetime>20150108T182709,15+01</datetime></lastaccessed>
-<addedtofile><datetime>20150108T182709,15+01</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
-<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
->>>>>>> 2e68ddd4dfd66a8117f7624a6644470a5aed6aa5
 <item name="$TITLE" sign="true"><text>bs3_tweaks.css</text></item>
 <item name="$FileModDT" sign="true"><datetime dst="true">20140706T024353,55+02</datetime></item>
 <item name="$Flags"><text>=34QC</text></item>
